@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->id();
+            $table->uuid()->unique();
             $table->unsignedBigInteger('user_id');
             $table->string('address_line_1');
             $table->string('address_line_2')->nullable();
@@ -20,7 +21,7 @@ return new class extends Migration
             $table->string('postal_code');
             $table->string('state');
             $table->string('country');
-            $table->unsignedTinyInteger('type');
+            // $table->unsignedTinyInteger('type');
             $table->timestamps();
         });
     }

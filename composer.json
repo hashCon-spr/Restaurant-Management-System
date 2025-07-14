@@ -17,6 +17,7 @@
 		"laravel/tinker": "^2.7",
 		"livewire/livewire": "^3.5",
 		"spatie/laravel-permission": "^6.7",
+		"tymon/jwt-auth": "^2.2",
 		"yajra/laravel-datatables": "^11.0"
 	},
 	"require-dev": {
