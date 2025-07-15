@@ -11,16 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('menus', function (Blueprint $table) {
+        Schema::create('reviews', function (Blueprint $table) {
             $table->id();
             $table->uuid()->unique();
-            $table->foreignId('discount_menu_id')->constrained('discount_menus')->onDelete('cascade');
-            $table->string('name');
-            $table->integer('early_stock');
-            $table->integer('final_stock');
-            $table->integer('price');
-            $table->string('photo')->nullable();
-            $table->integer('discounted_price');
+            $table->foreignId('menu_id')->constrained('menus')->onDelete('cascade');
+            $table->integer('star');
+            $table->longtext('review_message');
+            $table->date('released_at');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('menus');
+        Schema::dropIfExists('reviews');
     }
 };
