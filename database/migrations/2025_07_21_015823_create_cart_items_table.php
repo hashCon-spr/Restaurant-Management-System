@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->uuid()->unique();
             $table->foreignId('menu_id')->constrained('menus')->onDelete('cascade');
+            $table->foreignId('cart_id')->constrained('carts')->onDelete('cascade');
+            $table->foreignId('order_detail__id')->constrained('order_details')->onDelete('cascade');
             $table->integer('quantity');
             $table->integer('price');
             $table->timestamps();
