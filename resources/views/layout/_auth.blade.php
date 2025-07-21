@@ -37,33 +37,35 @@
             <!--end::Body-->
 
             <!--begin::Aside-->
-            <div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2" style="background-image: url({{ image('misc/Auth-BG.png') }})">
+            <div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2" style="background-image: url({{ image('misc/Food-Background.png') }})">
                 <!--begin::Content-->
                 <div class="d-flex flex-column flex-center py-7 py-lg-15 px-5 px-md-15 w-100">
                     <!--begin::Logo-->
-                    <a href="{{ route('dashboard') }}" class="mb-12">
-                        <img alt="Logo" src="{{ image('logos/nusantara.png') }}" class="h-60px h-lg-200px"/>
-                    </a>
+                    {{-- <a href="{{ route('dashboard') }}" class="mb-12">
+                        <img alt="Logo" src="{{ image('') }}" class="h-60px h-lg-200px"/>
+                    </a> --}}
                     <!--end::Logo-->
 
                     <!--begin::Image-->
-                    <img class="d-none d-lg-block mx-auto w-275px w-md-50 w-xl-500px mb-10 mb-lg-20" src="{{ image('misc/food-bg.png') }}" alt=""/>
+                    {{-- <img class="d-none d-lg-block mx-auto w-275px w-md-50 w-xl-500px mb-10 mb-lg-20" src="{{ image('') }}" alt=""/> --}}
                     <!--end::Image-->
 
-                    <!--begin::Title-->
-                    <h1 class="d-none d-lg-block text-dark fs-2qx fw-bolder text-center mb-7">
-                        Experience the Authentic Taste of Indonesia
-                    </h1>
-                    <!--end::Title-->
+                    <div class="wrapper" style="margin-top: 200px;">
+                        <!--begin::Title-->
+                        <h1 class="d-none d-lg-block text-white fs-2qx fw-bolder text-center mb-7">
+                            Experience the Authentic Taste of Indonesia
+                        </h1>
+                        <!--end::Title-->
 
-                    <!--begin::Text-->
-                    <div class="d-none d-lg-block text-dark fs-base text-center">
-                        <p>Welcome to Nusantara Restaurant.
-                            We bring you a rich variety of Indonesian dishes, crafted with traditional spices and the finest ingredients.
-                            From Sumatra to Papua — every flavor tells a story.
-                            Sign in now and start your culinary journey with us</p>
+                        <!--begin::Text-->
+                        <div class="d-none d-lg-block text-white fs-base text-center">
+                            <p class="fs-3">Welcome to Nusantara Restaurant.
+                                We bring you a rich variety of Indonesian dishes, crafted with traditional spices and the finest ingredients.
+                                From Sumatra to Papua — every flavor tells a story.
+                                Sign in now and start your culinary journey with us</p>
+                        </div>
+                        <!--end::Text-->
                     </div>
-                    <!--end::Text-->
                 </div>
                 <!--end::Content-->
             </div>
